@@ -1,15 +1,15 @@
 // Program 10a Converting Strings to Numerical Values
 #include <stdio.h>
-
+#include <stdlib.h>
+ 
 int main(void)
 {
 
   char value_str[] = "98.4";
-double value = atof(value_str);
-// Convert string to floating-point
+  double value = atof(value_str);  // Convert string to floating-point
 
+  printf("number: %f", value);
 
-  printf("The character \0 is used to terminate a string.");
   return 0;
 }
 
