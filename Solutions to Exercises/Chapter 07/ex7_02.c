@@ -109,9 +109,9 @@ int main(void)
 
   // Order the proverbs from shortest to longest
   size_t length = 0;
-  for(size_t i = 0 ; i < count - 2 ; ++i)
+  for(size_t i = 0 ; i < count - 1 ; ++i)
   {
-    for(size_t j = i + 1 ; j < count-1 ; ++j)
+    for(size_t j = i + 1 ; j < count ; ++j)
     {
       if(*(pLengths + i) > *(pLengths + j))
       {
