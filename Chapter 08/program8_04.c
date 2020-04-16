@@ -19,6 +19,12 @@ int main(void)
 {
   size_t pS_size = INIT_NSTR;                 // count of pS elements
   char **pS = calloc(pS_size, sizeof(char*)); // Array of string pointers
+  if(!pS)
+  {
+    printf("Failed to allocate memory for string pointers.\n");
+    exit(1);
+  }
+
   char **pTemp = NULL;                        // Temporary pointer
 
   size_t str_count = 0;                       // Number of strings read
@@ -39,8 +45,8 @@ int main(void)
     pS[str_count++] = pStr;    
   }
 
-  str_sort((const char**)pS, str_count);      // Sort strings 
-  str_out((const char**)pS, str_count);       // Output strings
+  str_sort(pS, str_count);                    // Sort strings 
+  str_out(pS, str_count);                     // Output strings
   free_memory(pS, str_count);                 // Free all heap memory
   return 0;
 }

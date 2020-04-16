@@ -1,7 +1,7 @@
 // Program 8.5 A function to increase your pay
 #include <stdio.h>
 
-long *IncomePlus(long* pPay);          // Prototype for increased pay function 
+long *IncomePlus(long* pPay);          // Prototype for increase pay function 
 
 int main(void)
 {
