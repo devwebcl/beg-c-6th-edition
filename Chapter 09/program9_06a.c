@@ -39,7 +39,9 @@ void print_board(void)
     {
         for (int x = 0; x < SIZE; x++)
         {
-            printf("%d ", board[x][y]);
+            char c = board[x][y];
+            if(c<2) c = c + 48;
+            printf("%c ", c);
         }
         printf("\n");
     }
