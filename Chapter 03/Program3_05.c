@@ -1,5 +1,7 @@
 // Program 3.5   Testing letters an easier way
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
 int main(void)
 {
   char letter =0;                                // Stores an input character

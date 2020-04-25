@@ -1,4 +1,5 @@
 // Program 3.7 A confused recruiting policy
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
 

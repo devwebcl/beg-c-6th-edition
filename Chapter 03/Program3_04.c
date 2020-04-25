@@ -1,4 +1,5 @@
 // Program 3.4 Converting uppercase to lowercase
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

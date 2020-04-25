@@ -1,4 +1,5 @@
 // Program 3.8 Lucky Lotteries
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

@@ -1,4 +1,5 @@
 // Program 3.3 Using nested ifs to analyze numbers
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <limits.h>               // For LONG_MAX
 

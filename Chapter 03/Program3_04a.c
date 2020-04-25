@@ -1,6 +1,7 @@
-// Program 3.4A Converting uppercase to lowercase using wide characters
+// Program 3.4a Converting uppercase to lowercase
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <wchar.h>
+
 
 int main(void)
 {

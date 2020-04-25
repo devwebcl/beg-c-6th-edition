@@ -1,4 +1,5 @@
 // Program 3.1 A simple example of the if statement
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

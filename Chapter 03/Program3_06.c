@@ -1,4 +1,5 @@
 // Program 3.6 Multiple discount levels
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

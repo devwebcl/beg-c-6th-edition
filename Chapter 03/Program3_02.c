@@ -1,4 +1,5 @@
 // Program 3.2 Using if statements to decide on a discount
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
