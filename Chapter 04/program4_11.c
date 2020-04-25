@@ -21,7 +21,7 @@ int main(void)
     while(j < i)
     {
       sum += ++j;
-      printf(" + %u", j);         // Output +j – on the same line
+      printf(" + %u", j);         // Output +j - on the same line
     }
     printf(" = %lu", sum);        // Output  = sum
   }
