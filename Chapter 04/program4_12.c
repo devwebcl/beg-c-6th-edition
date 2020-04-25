@@ -1,5 +1,7 @@
 // Program 4.12 Reversing the digits
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
 int main(void)
 {
   unsigned int number = 0;                 // The number to be reversed

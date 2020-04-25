@@ -1,4 +1,5 @@
-//  Program 4.8 While programming and summing integers
+// Program 4.8 While programming and summing integers
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

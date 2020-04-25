@@ -1,5 +1,7 @@
 // Program 4.5 Summing integers backward
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
 int main(void)
 {
   unsigned  long long sum = 0LL;            // Stores the sum of the integers

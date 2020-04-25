@@ -1,4 +1,5 @@
 // Program 4.6 The almost indefinite loop - computing an average
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <ctype.h>                   // For tolower() function
 

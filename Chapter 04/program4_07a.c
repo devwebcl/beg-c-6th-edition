@@ -1,4 +1,5 @@
-//  Program 4.7A  A More Interesting Guessing Game
+// Program 4.7a A More Interesting Guessing Game
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>                          // For rand() and srand()
 #include <time.h>                            // For time() function
@@ -10,7 +11,7 @@ int main(void)
   int count = 3;                            // The maximum number of tries
   int limit = 20;                           // Upper limit for pseudo-random values
 
-  srand(time(NULL));                        // Use clock value as starting seed
+  srand((unsigned int)time(NULL));          // Use clock value as starting seed
   chosen = 1 + rand() % limit;              // Random int 1 to limit
 
   printf("\nThis is a guessing game.");

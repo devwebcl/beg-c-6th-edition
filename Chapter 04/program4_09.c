@@ -1,4 +1,5 @@
 // Program 4.9 Output a box with given width and height
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

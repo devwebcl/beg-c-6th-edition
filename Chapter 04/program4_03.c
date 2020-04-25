@@ -1,4 +1,5 @@
-//  Program 4.3   Sum the integers from 1 to a user-specified number
+//  Program 4.3 Sum the integers from 1 to a user-specified number
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

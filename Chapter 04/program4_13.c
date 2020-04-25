@@ -1,4 +1,5 @@
 // Program 4.13 Simple Simon
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>                   // For input and output 
 #include <ctype.h>                   // For toupper() function
 #include <stdbool.h>                 // For bool, true, false
@@ -47,7 +48,7 @@ int main(void)
       wait_start = clock();                   // record start time for sequence
 
       // Generate a sequence of digits and display them
-      srand(time(&seed));              // Initialize the random sequence
+      srand((unsigned int)time(&seed));              // Initialize the random sequence
       for(unsigned int i = 1 ; i <= digits ; ++i)
         printf("%u ", rand() % 10);    // Output a random digit
 
@@ -65,7 +66,7 @@ int main(void)
       else
         printf("\r");                  // Back to the beginning of the line
 
-      srand(seed);                     // Reinitialize the random sequence
+      srand((unsigned int)seed);                     // Reinitialize the random sequence
       for(unsigned int i = 1 ; i <= digits ; ++i)
       // Read the input sequence & check against the original
       {
