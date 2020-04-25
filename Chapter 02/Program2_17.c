@@ -1,4 +1,5 @@
 // Program 2.17  Calculating the height of a tree 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

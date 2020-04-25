@@ -1,4 +1,5 @@
 // Program 2.9 More round tables 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define PI   3.14159f                       // Definition of the symbol PI
 

@@ -1,4 +1,5 @@
 // Program 2.10 Round tables again but shorter 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
