@@ -1,4 +1,5 @@
 //Exercise 5.5 Calculating average student grades.
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
 #include <ctype.h>

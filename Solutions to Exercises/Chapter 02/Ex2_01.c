@@ -1,4 +1,5 @@
 // Exercise 2.1 Convert inches to yards, feet, and inches
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

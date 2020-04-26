@@ -1,4 +1,5 @@
 // Exercise 6.1 Convert an integer to words
+#define _CRT_SECURE_NO_WARNINGS
 #define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
 #include <string.h>

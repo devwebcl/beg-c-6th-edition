@@ -1,4 +1,5 @@
 //Exercise 5.1 Summing reciprocals of five values
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

@@ -1,4 +1,5 @@
 // Exercise 2.4  Calculating average hourly pay rate
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

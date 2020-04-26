@@ -1,4 +1,5 @@
 /*Exercise 3.4 A calculator that allows multiple calculations */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

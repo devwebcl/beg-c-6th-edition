@@ -4,6 +4,7 @@
 // We have to select one of the digits 0 to 9 based on the value returned by rand().
 // Thus we need to divide the range from 0 to RAND_MAX into 10 intervals
 // and select a digit depending on the range in which the number returned by rand() lies.
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>                               // For input and output 
 #include <ctype.h>                               // For toupper() function
@@ -115,12 +116,12 @@ int main(void)
     score = 10*(digits - ((tries % 3) == 1));    // Points for sequence length
     total_digits = digits*(((tries % 3) == 0) ? 3 : tries % 3);
     if(digits > 2)
-      total_digits += 3*((digits - 1)*(digits - 2)/2 - 1);
+      total_digits += 3*((digits - 1)*(digits)/2 - 1);
 
     game_time = (clock() - start_time)/CLOCKS_PER_SEC - tries*DELAY;
 
     if(total_digits > game_time) 
-      score += 10*(game_time - total_digits);    // Add points for speed
+      score += 10*(total_digits - game_time);    // Add points for speed
     printf("\n\nGame time was %u seconds. Your score is %u", game_time, score);
 
     fflush(stdin);                               // Clear the input buffer

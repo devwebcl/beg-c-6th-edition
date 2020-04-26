@@ -27,12 +27,16 @@ int main(void)
   char *ptr = NULL;
   size_t list_len = strnlen_s(list, MAX_LEN);
   char *pWord = strtok_s(list, &list_len, comma, &ptr);    // Find 1st word
+  // use this line instead, for Microsoft compiler:
+  //char *pWord = strtok_s(list, comma, &ptr);    // Find 1st word
   if(pWord)
   {
     do
     {
       printf("%s\n", pWord);
       pWord = strtok_s(NULL, &list_len, comma, &ptr);      // Find subsequent words
+      // use this line instead, for Microsoft compiler:
+      //pWord = strtok_s(NULL, comma, &ptr);      // Find subsequent words
     }while(pWord);                                         // NULL ends tokenizing
   }
 

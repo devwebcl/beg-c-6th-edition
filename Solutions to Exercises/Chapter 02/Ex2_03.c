@@ -2,6 +2,7 @@
 
 // The only problem here is to devise a way to determine the price
 // for the product type. Here I used the product type value to do this.
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

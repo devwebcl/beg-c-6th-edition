@@ -5,7 +5,7 @@
 // That is, you don't get 15% discount on the whole price when you order 51 items.
 
 // There is more than one way of doing this so different is not necessarily wrong.
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
