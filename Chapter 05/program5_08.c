@@ -1,4 +1,5 @@
 // Program 5.8 Tic-Tac-Toe
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

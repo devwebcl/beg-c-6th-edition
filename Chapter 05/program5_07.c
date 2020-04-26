@@ -1,4 +1,5 @@
 // Program 5.7 Averaging a variable number of grades grades
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)

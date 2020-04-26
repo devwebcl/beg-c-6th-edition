@@ -1,4 +1,5 @@
 // Program 5.2 Averaging ten grades - storing values the hard way
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
