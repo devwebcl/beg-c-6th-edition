@@ -6,10 +6,13 @@
 int main(void)
 {
   char preamble[] = "The joke is:\n\n";
-  char str[][40] = {
+  char str[][60] = {
                      "My dog hasn\'t got any nose.\n",
                      "How does your dog smell then?\n",
-                     "My dog smells horrible.\n"
+                     "My dog smells horrible.\n",
+					 //jokes from C11 standard footnote, which are removed in C17:
+					 "Atomic objects are neither active nor radioactive\n",
+					 "Among other implications, atomic variables shall not decay\n"
                    };
 
   unsigned int strCount = sizeof(str)/sizeof(str[0]);
