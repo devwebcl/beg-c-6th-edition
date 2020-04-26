@@ -34,11 +34,13 @@ int main(void)
       return 1;
     }
   }
-  printf("The words in the prose that you entered are:\n", str);
+  printf("The words in the prose that you entered are:\n");
 
   // Find and list all the words in the prose
   unsigned int word_count = 0;
   char * pWord = strtok_s(str, &str_len, delimiters, &ptr);  // Find 1st word
+  // use this line instead, for Microsoft compiler:
+  // char * pWord = strtok_s(str, delimiters, &ptr);  // Find 1st word
   if(pWord)
   {
     do
@@ -47,6 +49,8 @@ int main(void)
       if(++word_count % 5 == 0)
         printf("\n");
       pWord = strtok_s(NULL, &str_len, delimiters, &ptr);    // Find subsequent words
+      // use this line instead, for Microsoft compiler:
+      //pWord = strtok_s(NULL, delimiters, &ptr);    // Find subsequent words
     }while(pWord);                                           // NULL ends tokenizing
     printf("\n%u words found.\n", word_count);
   }

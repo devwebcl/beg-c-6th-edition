@@ -43,6 +43,8 @@ int main(void)
   size_t len = TEXT_LEN;
   char *ptr = NULL;
   char* pWord = strtok_s(text, &len, delimiters, &ptr);    // Find 1st word
+  // use this line instead, for Microsoft compiler:
+  //char* pWord = strtok_s(text, delimiters, &ptr);    // Find 1st word
   if(!pWord)
   {
     printf("No words found. Ending program.\n");
@@ -56,6 +58,8 @@ int main(void)
   while(true)
   {
     pWord = strtok_s(NULL, &len, delimiters, &ptr);        // Find subsequent word
+    // use this line instead, for Microsoft compiler:
+    //pWord = strtok_s(NULL, delimiters, &ptr);        // Find subsequent word
     if(!pWord)
       break;                                               // NULL ends tokenizing
 

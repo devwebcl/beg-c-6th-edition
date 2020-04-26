@@ -1,4 +1,4 @@
-// Program 10a Converting Strings to Numerical Values
+// Program 6.9a Converting Strings to Numerical Values
 #include <stdio.h>
 #include <stdlib.h>
  
