@@ -11,12 +11,10 @@
 int main(void)
 {
   char buf[BUF_LEN];                                           // Input expression
-  char number_string[30];                                      // Stores a number string from input
   char op = 0;                                                 // Stores an operator
   size_t index = 0;                                            // Index of the current character in buf
   size_t to = 0;                                               // To index for copying buf to itself
   size_t buf_length = 0;                                       // Length of the string in buf
-  unsigned int number_length = 0;                              // Length of the string in number_string
   double result = 0.0;                                         // The result of an operation
   double number = 0.0;                                         // Stores the value of right operand
   char* endptr = NULL;                                         // Stores address of character following a number

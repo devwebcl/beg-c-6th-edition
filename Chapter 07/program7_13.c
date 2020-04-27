@@ -51,7 +51,9 @@ int main(void)
   size_t str_len = strnlen_s(pStr, str_size);                // Length used by strtok_s()
   char* ptr = NULL;                                          // Pointer used by strtok_s()
   char* pWord = strtok_s(pStr, &str_len, delimiters, &ptr);  // Find 1st word
-
+  // use this line instead, for Microsoft compiler:
+  //char* pWord = strtok_s(pStr, delimiters, &ptr);  // Find 1st word
+ 
   if(!pWord)
   {
     printf("No words found. Ending program.\n");
@@ -94,6 +96,8 @@ int main(void)
       new_word = true;                                      // Reset new word flag
  
    pWord = strtok_s(NULL, &str_len, delimiters, &ptr);      // Find subsequent word
+   // use this line instead, for Microsoft compiler:
+   //pWord = strtok_s(NULL, delimiters, &ptr);      // Find subsequent word
  }
 
   // Output the words and counts
