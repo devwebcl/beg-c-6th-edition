@@ -45,8 +45,8 @@ int main(void)
     pS[str_count++] = pStr;    
   }
 
-  str_sort(pS, str_count);                    // Sort strings 
-  str_out(pS, str_count);                     // Output strings
+  str_sort((const char**)pS, str_count);      // Sort strings 
+  str_out((const char**)pS, str_count);       // Output strings
   free_memory(pS, str_count);                 // Free all heap memory
   return 0;
 }
@@ -96,7 +96,7 @@ void str_sort(const char **p, size_t n)
   while(!sorted)                              // Loop until there are no swaps
   {
     sorted = true;                            // Initialize to indicate no swaps
-    for(int i = 0 ; i < n - 1 ; ++i)
+    for(size_t i = 0 ; i < n - 1 ; ++i)
     {
       if(strcmp(p[i], p[i + 1]) > 0)
       {
