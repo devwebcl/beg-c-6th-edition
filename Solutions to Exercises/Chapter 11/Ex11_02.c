@@ -47,7 +47,7 @@ int main(void)
 
   printf_s("\nThe records we have are:\n");
   for(size_t i = 0 ; i < count ; ++i)
-    show(records[i]);
+    show(&records[i]);
   printf_s("\n");
   return 0;
 }
@@ -56,7 +56,7 @@ int main(void)
 size_t get_records(PhoneRecord records[], size_t size)
 {
   size_t count = 0;
-  char answer = 'y';
+  char answer; // = 'y';
   do
   {
     records[count].name = read_name();                                        // Read the name
@@ -114,7 +114,7 @@ void search_records(PhoneRecord records[], size_t count)
   do
   {
     name = read_name();
-    int index = 0;
+    size_t index = 0;
     bool first = true;
     while((index = find_record(records, index, count, &name)) >= 0)
     {

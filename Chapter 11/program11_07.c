@@ -18,7 +18,8 @@ struct Node
 // Function prototypes 
 Node *create_node(long value);                   // Create a tree node 
 Node *add_node(long value, Node *pNode);         // Insert a new node  
-void list_nodes(Node *pNode);                    // List all nodes     
+void list_nodes_ascending(Node *pNode);          // List all nodes     
+void list_nodes_descending(Node *pNode);         // List all nodes     
 void free_nodes(Node *pNode);                    // Release memory     
 
 
@@ -41,7 +42,9 @@ int main(void)
   } while(tolower(answer) == 'y');
 
   printf_s("The values in ascending sequence are:\n");
-  list_nodes(pRoot);                             // Output the contents of the tree 
+  list_nodes_ascending(pRoot);                   // Output the contents of the tree 
+  printf_s("The values in descending sequence are:\n");
+  list_nodes_descending(pRoot);
   free_nodes(pRoot);                             // Release the heap memory         
 
   return 0;
@@ -91,16 +94,28 @@ Node *add_node(long value, Node *pNode)
   }
 }
 
-// List the node values in ascending sequence 
-void list_nodes(Node *pNode)
+// List the node values in ascending sequence (In-order)
+void list_nodes_ascending(Node *pNode)
 {
   if(pNode->pLeft)
-    list_nodes(pNode->pLeft);
+    list_nodes_ascending(pNode->pLeft);
 
   printf_s("%10d x %10ld\n", pNode->count, pNode->item);
 
   if(pNode->pRight)
-    list_nodes(pNode->pRight);
+    list_nodes_ascending(pNode->pRight);
+}
+
+// List the node values in descending sequence (Reverse in-order)
+void list_nodes_descending(Node *pNode)
+{
+  if(pNode->pRight)
+    list_nodes_descending(pNode->pRight);
+
+  printf_s("%10d x %10ld\n", pNode->count, pNode->item);
+
+  if(pNode->pLeft)
+    list_nodes_descending(pNode->pLeft);
 }
 
 // Release memory allocated to nodes 

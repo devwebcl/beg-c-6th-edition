@@ -23,7 +23,7 @@ int main(void)
   for(hcount = 0 ; hcount < sizeof(my_horses)/sizeof(Horse) ; ++hcount)
   {
     printf_s("Do you want to enter details of a%s horse (Y or N)? ",
-                                              hcount?"nother " : "" );
+                                              hcount ? "nother " : "" );
     scanf_s(" %c", &test, sizeof(test));
     if(tolower(test) == 'n')
        break;

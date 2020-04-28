@@ -40,7 +40,7 @@ int main(void)
   while(true)
   {
     printf_s("\nDo you want to enter details of a%s person (Y or N)? ",
-                                        first != NULL?"nother" : "");
+                                        first != NULL ? "nother" : "");
     scanf_s(" %c", &more, sizeof(more));
     if(tolower(more) == 'n')
       break;

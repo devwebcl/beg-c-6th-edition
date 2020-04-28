@@ -27,7 +27,7 @@ int main(void)
   for( ; ; )
   {
     printf_s("Do you want to enter details of a%s horse (Y or N)? ",
-                                       first != NULL?"nother " : "" );
+                                       first != NULL ? "nother " : "" );
     scanf_s(" %c", &test, sizeof(test));
     if(tolower(test) == 'n')
       break;
