@@ -44,7 +44,8 @@ void show_record(const PhoneRecord *precord);// Output name and number from a ph
 int main(void)
 {
   FILE *pFile = NULL;                        // Output file pointer
-  char *filename = "C:\\records.bin";        // Name of the file to be written
+  //take care that you have permission to the path
+  char *filename = "C:\\tmp\\records.bin";        // Name of the file to be written
   char answer = 'n';
   PhoneRecord record;
 
@@ -52,7 +53,8 @@ int main(void)
   scanf_s(" %c", &answer, sizeof(answer));
   if(tolower(answer) == 'y')
   {
-     if(fopen_s(&pFile, filename, "a+"))
+	 
+     if(fopen_s(&pFile, filename, "a+")) // a+ or w+
     {
       printf_s("Error opening %s for writing. Program terminated.\n", filename);
       exit(1);
@@ -110,7 +112,7 @@ void list_records(char *filename)
   if(fopen_s(&pFile, filename, "r"))      // Open the file to read it
   {
     printf_s("Error opening %s for reading. Program terminated.", filename);
-    exit(1);
+    exit(EXIT_FAILURE);
   }
   setvbuf(pFile, NULL, _IOFBF, 512); 
 

@@ -33,7 +33,7 @@ int main(void)
   if(fopen_s(&pfile, filename, "r"))
   {
     printf_s("Error opening %s for reading. Program terminated.\n", filename);
-    exit(1);
+    exit(EXIT_FAILURE);   // 1
   }
   setbuf(pfile, NULL);
 
