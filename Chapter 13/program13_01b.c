@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 
+// _Generic is not supported by Visual Studio 2019 yet. 
+//(please use gcc or Pelles for this example)
 #define custom_exp(x) _Generic((x), \
    double: exp, \
    float: expf, \
