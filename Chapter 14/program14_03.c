@@ -11,9 +11,15 @@ int main(void)
 #else
   printf_s("Complex numbers are supported.\n");
 #endif
+#ifdef __STDC_IEC_559_COMPLEX__
+   printf("Complex and Imaginary arithmetic is supported with IEC 60559.\n");
+#else
+   printf("Complex and Imaginary arithmetic is NOT supported with IEC 60559.\n");
+#endif
   double complex cx = 1.0 + 3.0*I;
-  double complex  cy = 1.0 - 4.0*I;
-  printf_s("Working with complex numbers:\n");
+  double complex cy =  CMPLX(1.0, -4.0);
+  //double complex cy = 1.0 - 4.0*I;
+  printf_s("\nWorking with complex numbers:\n");
   printf_s("Starting values: cx = %.2f%+.2fi  cy = %.2f%+.2fi\n",
                                         creal(cx), cimag(cx), creal(cy), cimag(cy));
 
