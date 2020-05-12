@@ -6,11 +6,12 @@
 
 #define SIZE 5
 
-bool used[SIZE * SIZE];
-int solution[SIZE * SIZE];
-int depth = 1;
-int graph[8][SIZE * SIZE]; // 8 = possible branches
-int Start, Finish, solutions;
+bool used[SIZE * SIZE];      // array to mark used nodes in the graph
+int solution[SIZE * SIZE];   // the full path of a current solution
+int depth = 1;               // depth of the graph, more similar to "steps"
+int graph[8][SIZE * SIZE];   // 8 = possible branches
+int Start, Finish;           // integer representation of start, finish cells
+int solutions;               // solution counter
 
 // y, x pattern:
 // white = 0
