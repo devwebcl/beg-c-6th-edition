@@ -26,9 +26,10 @@ int board[SIZE][SIZE] =
 /*
 int board[SIZE][SIZE] =
         {
-                { 0, 1, 'F' },
-                { 1, 0,   1 },
-                { 'S', 1, 0} };
+                { 0,   1, 'F' },
+                { 1,   0,  1  },
+                { 'S', 1,  0  } 
+		};
 */
 
 void print_board(void)
@@ -40,11 +41,12 @@ void print_board(void)
         for (int x = 0; x < SIZE; x++)
         {
             char c = board[x][y];
-            if(c<2) c = c + 48;
+            if(c<2) c = c + '0';
             printf("%c ", c);
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 //compare boundaries cells
@@ -52,7 +54,7 @@ int compare(int x, int y, int x1, int y1, int branches, int level)
 {
     if ( (x1 >= 0) && (x1 < SIZE) && (y1 >= 0) && (y1 < SIZE))
     {
-        // we check that neighbor cells are not both even or odd.
+        // we check that neighbor cells are not both 0 or 1. (white or black)
         if (board[x1][y1] != board[x][y])
         {
             graph[0][level]++;  //amount of possible nodes to visit
@@ -75,6 +77,13 @@ void initialize(void)
     {
         used[x] = false;
         solution[x] = 0;
+    }
+    for (int y = 0; y < SIZE * SIZE; y++)
+	{
+       for (int x = 0; x < 8; x++)
+       {
+         graph[x][y] = 0;
+       }
     }
 
     /* board parser */
