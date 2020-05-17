@@ -4,11 +4,11 @@
 int main(void)
 {
 	int n = 0x40201;  // 0x40201 = 262657
-	char* p = (char*) &n; 
+	char* p = (char*)&n; 
 	int e = 0x1;
 	char *q = (char*)&e;
 
-     //4 bytes an integer:
+     //4 bytes, it's an integer:
 	for (int i = 0; i < 4; i++) 
 	{
 		printf("memory address: %p: value: %d\n", p, *p++);
