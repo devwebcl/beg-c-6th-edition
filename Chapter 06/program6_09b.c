@@ -1,6 +1,6 @@
 // Program 6.9b Converting Strings to Numerical Values
 #include <stdio.h>
-#include <stdlib.h>     /* strtod */
+#include <stdlib.h>     /* strtod() */
 #include <stdbool.h>
 
 int main(void)
