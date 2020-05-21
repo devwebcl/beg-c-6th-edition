@@ -1,8 +1,8 @@
 # Apress Source Code
 
-This repository accompanies [*Beginning C, 5th Edition*](http://www.apress.com/9781430248811) by Ivor Horton (Apress, 2013).
+This repository accompanies [*Beginning C, 6th Edition*](https://www.apress.com/gp/book/9781484259757) by Gonzalez-Morris, German, Horton, Ivor (Apress, 2020).
 
-![Cover image](9781430248811.jpg)
+![Cover image](9781484259757.jpg)
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
