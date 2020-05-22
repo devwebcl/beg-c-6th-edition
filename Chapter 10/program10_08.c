@@ -8,7 +8,7 @@ int main(void)
   long long li = 56789LL, lj = 67891234567LL, lk = 23456789LL;
 
   printf_s("i = %d   j = %d    k = %d   i = %6.3d   j = %6.3d   k = %6.3d\n", i ,j, k, i, j, k);
-  printf_s("i = %-d   j = %+d   k = %-d   i = %-6.3d   j = %-6.3d   k = %-6.3d\n",i ,j, k, i, j, k);
+  printf_s("i = %-d   j = %+d   k = %-d   i = %-6.3d   j = %-6.3d   k = %-6.3d\n", i ,j, k, i, j, k);
   printf_s("li = %d   lj = %d   lk = %d\n", li, lj, lk);
   printf_s("li = %lld   lj = %lld   lk = %lld\n", li, lj, lk);
   return 0;
