@@ -1,4 +1,5 @@
 // Program 12.3a mode "x"
+#define _CRT_SECURE_NO_WARNINGS
 #define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
 #include <stdlib.h>

@@ -64,7 +64,7 @@ int main(void)
           remove(filename);
         break;
       case 'Q':                                 // Quit the program
-        printf_s("Ending the program.\n", filename);
+        printf_s("Ending the program.\n");
         exit(0);
       default:
         printf_s("Invalid selection. Try again.\n");

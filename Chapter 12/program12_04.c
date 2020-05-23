@@ -117,7 +117,7 @@ bool is_prime(unsigned long long n)
 int check(unsigned long long buffer[], size_t count, unsigned long long n)
 {
   // Upper limit
-  unsigned long long root_N = (unsigned long long)(1.0 + sqrt(n));
+  unsigned long long root_N = (unsigned long long)(1.0 + sqrt((double)n));
 
   for(size_t i = 0 ; i < count ; ++i)
   {
