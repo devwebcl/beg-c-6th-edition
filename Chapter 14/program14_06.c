@@ -1,4 +1,4 @@
-//Example 14.4a simple fork
+//Example 14.6 simple fork
 
 // it does not work in Windows, unless MinGW gcc is used
 #include <stdio.h> 

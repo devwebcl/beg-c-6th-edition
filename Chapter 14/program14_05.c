@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <threads.h>
 #include <math.h>
+// please use Pelles C compiler for this example.
 
 #define thread_count 5                          // Number of task threads
 

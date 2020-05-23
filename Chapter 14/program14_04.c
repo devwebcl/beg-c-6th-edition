@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <threads.h>
+// please use Pelles C compiler for this example.
 
 typedef struct MyData
 {
