@@ -20,7 +20,8 @@ int main(void)
   struct tm ourT;                                     // The time structure
   time_t tVal = time(NULL);                           // Calendar time
 
-  if(!localtime_s(&tVal, &ourT))                      // Populate time structure
+  //if(localtime_s(&ourT , &tVal))                      // VS 2019 - Populate time structure
+  if(!localtime_s(&tVal, &ourT))                     // C11 standard - Populate time structure
   {
     fprintf_s(stderr, "Failed to populate tm struct.\n");
     return -1;
