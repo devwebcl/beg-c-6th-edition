@@ -89,6 +89,9 @@ Record *get_person(Record *precord)
 void get_name(char *pname, size_t size)
 {
   fflush(stdin);
+  //int c; 
+  //while (((c = getchar()) != '\n') && c != EOF);   // for visual studio 2019
+
   fgets(pname, size, stdin);                             // Read the name
   size_t len = strnlen_s(pname, size);
   if(pname[len - 1] == '\n')         // if there's a newline

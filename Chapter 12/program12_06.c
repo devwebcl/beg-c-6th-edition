@@ -26,6 +26,8 @@ int main(void)
   do
   {
     fflush(stdin);                                    // Remove whitespace
+    //int c; 
+    //while (((c = getchar()) != '\n') && c != EOF);   // for visual studio 2019
 
     printf_s("Enter a name less than %d characters: ", MAXLEN);
     gets_s(name, sizeof(name));                       // Read the name

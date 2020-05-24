@@ -89,6 +89,8 @@ bool get_person(Family *temp)
 void getname(char *name, size_t size)
 {
   fflush(stdin);                                       // Skip whitespace
+  //int c; 
+  //while (((c = getchar()) != '\n') && c != EOF);   // for visual studio 2019
   fgets(name, size, stdin);
   int len = strnlen_s(name, size);
   if(name[len-1] == '\n')                              // If last char is newline
